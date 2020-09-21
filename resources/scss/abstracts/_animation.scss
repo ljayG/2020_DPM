@@ -1,0 +1,54 @@
+@keyframes scalein{
+  0%{
+    opacity: 0.5;
+    transform: scale(1.5);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes vanishBelow{
+  0%{
+    opacity: 0.4;
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(25px);
+  }
+}
+
+.anipoint1{
+  @include transition(0.3s);
+  opacity: 0;
+  transform: translateY(40px);
+
+  @include mq('deskTop'){
+    transform: translateY(60px);
+  }
+
+  &.playshow{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pointspot{
+  from{
+    opacity: 0.7;
+    transform: scale(1);
+    background-color: $red;
+  }
+  to{
+    opacity: 0;
+    transform: scale(10);
+    background-color: $white;
+  }
+}
+
+@keyframes rotateVane{
+  100%{
+    transform: rotate(360deg);
+  }
+}
