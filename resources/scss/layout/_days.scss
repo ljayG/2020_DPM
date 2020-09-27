@@ -7,10 +7,6 @@
         width: 85px;
         height: 85px;
         border-radius: 50%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        overflow: hidden;
     }
 
     .career{
@@ -129,10 +125,6 @@
             position: relative;
             width: 85px;
             height: 85px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
-            overflow: hidden;
             border-radius: 50%;
             box-shadow: rgba($black, 0.15) 0 3px 8px;
 
@@ -148,6 +140,19 @@
                 text-align: center;
                 text-shadow: rgba($black, 0.15) 0 0 3px;
             }
+        }
+    }
+}
+
+.face_pic{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+
+    @for $pic from 1 through 21{
+        &.inspicture#{$pic}{
+            background-image: url('../images/days/instructor#{$pic}.jpg');
         }
     }
 }

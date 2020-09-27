@@ -14,6 +14,9 @@
     &.isi_comn04{
         @include bgicon(28, 30, '../images/icon/comn04.png');
     }
+    &.isi_top{
+        @include bgicon(27, 27, '../images/icon/top.png');
+    }
 
     @for $down from 1 through 6{
         &.isi_dw#{$down}{

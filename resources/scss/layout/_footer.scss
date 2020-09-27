@@ -23,3 +23,37 @@
         line-height: 1.8;
     }
 }
+
+.pagecontrols{
+    display: none;
+    position: fixed;
+    right: 5px;
+    bottom: 120px;
+    z-index: 9;
+    
+    & > a{
+        background-color: rgba($white, 0.8);
+        border: 1px solid $lgray;
+        box-shadow: rgba($black, 0.1) 0 3px 3px;
+        display: block;
+        width: 57px;
+        height: 57px;
+        padding: 14px 0;
+        border-radius: 50%;
+        overflow: hidden;
+
+        & + a{
+            margin-top: 10px;
+        }
+
+        .isico{
+            @include marginCenter();
+        }
+
+        &.btn_btm{
+            .isico{
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
