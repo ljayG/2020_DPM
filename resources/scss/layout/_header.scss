@@ -1,0 +1,94 @@
+.header{
+	background-color: $white;
+	position: fixed;
+	width: 100%;
+	height: 43px;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+#header{
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	h1{
+		width: 36px;
+		height: 43px;
+		padding-left: 13px;
+
+		& > a{
+			@include ir();
+			display: block;
+			height: 100%;
+			background: url('../images/common/logo.png') no-repeat center;
+			background-size: contain;
+		}
+	}
+}
+
+.headmenu{
+	position: absolute;
+	height: 43px;
+	top: 0;
+	right: 13px;
+
+	& > a{
+		@include disinBlock('m');
+		width: 26px;
+		height: 100%;
+		margin-left: 10px;
+
+		span{
+			@include marginCenter();
+			@include ir();
+			display: block;
+			height: 100%;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+
+		@for $hmn from 1 through 2{
+			&.hmn_#{$hmn}{
+				span{
+					background-image: url('../images/common/top_mn#{$hmn}.png');
+				}
+			}
+		}
+
+		&.hmn_1{
+			span{
+				width: 20px;
+			}
+		}
+
+		&:first-of-type{
+			margin-left: 0;
+		}
+	}
+}
+
+
+
+@include mq('deskTop'){
+	@each $visualImg in introduce, business, investment, customer, etc {
+
+		#wrapper{
+			&.#{$visualImg}_wrap{
+				.header{
+					background-image: url('/resources/images/sub/visual_#{$visualImg}_m.jpg');
+
+					@include mq('tablet'){
+						background-image: url('/resources/images/sub/visual_#{$visualImg}.jpg');
+
+						@if $visualImg == 'investment' {
+							background-position: center top;
+						}
+					}
+				}
+			}
+		}
+	}
+}

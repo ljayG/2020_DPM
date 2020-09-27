@@ -15,34 +15,6 @@
     max-width: $maxWidth;
     margin-left: 20px;
     margin-right: 20px;
-
-    @include mq('deskTop') {
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-
-    @include mq('deskTop-superWide') {
-        @include marginCenter();
-    }
-}
-
-@mixin screenInner2($maxWidth) {
-    max-width: $maxWidth;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    @include mq('deskTop') {
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-
-    @include mq('deskTop-superWide') {
-        @include marginCenter();
-        padding-left: 0;
-        padding-right: 0;
-    }
 }
 
 @mixin blind(){
@@ -124,41 +96,6 @@
     }
 }
 
-@mixin paddAll($padding) {
-    padding: ($padding/2)+px;
-    @include mq('deskTop') {
-        padding: $padding+px;
-    }
-}
-
-@mixin paddTop($padding) {
-    padding-top: ($padding/2)+px;
-    @include mq('deskTop') {
-        padding-top: $padding+px;
-    }
-}
-
-@mixin paddBtm($padding) {
-    padding-bottom: ($padding/2)+px;
-    @include mq('deskTop') {
-        padding-bottom: $padding+px;
-    }
-}
-
-@mixin paddLeft($padding) {
-    padding-left: ($padding/2)+px;
-    @include mq('deskTop') {
-        padding-left: $padding+px;
-    }
-}
-
-@mixin paddRight($padding) {
-    padding-right: ($padding/2)+px;
-    @include mq('deskTop') {
-        padding-right: $padding+px;
-    }
-}
-
 @mixin mg($posi, $num) {
     @if $posi == 'top' {
         .mgt#{$num}{
@@ -179,34 +116,6 @@
     }
 }
 
-@mixin marTop($margin) {
-    margin-top: ($margin/2)+px;
-    @include mq('deskTop') {
-        margin-top: $margin+px;
-    }
-}
-
-@mixin marBtm($margin) {
-    margin-bottom: ($margin/2)+px;
-    @include mq('deskTop') {
-        margin-bottom: $margin+px;
-    }
-}
-
-@mixin marLeft($margin) {
-    margin-left: ($margin/2)+px;
-    @include mq('deskTop') {
-        margin-left: $margin+px;
-    }
-}
-
-@mixin marRight($margin) {
-    margin-right: ($margin/2)+px;
-    @include mq('deskTop') {
-        margin-right: $margin+px;
-    }
-}
-
 @mixin widImport($view, $width) {
 
     @if $view == 'desk'{
@@ -222,17 +131,12 @@
     transition: all $time ease-in-out;
 }
 
-@mixin bgicon($mwid, $mhei, $dwid, $dhei, $bgurl) {
+@mixin bgicon($mwid, $mhei, $bgurl) {
     width: $mwid+px;
     height: $mhei+px;
     background-image: url($bgurl);
     background-repeat: no-repeat;
     background-size: contain;
-
-    @include mq('deskTop'){
-        width: $dwid+px;
-        height: $dhei+px;
-    }
 }
 
 @mixin textOverflow() {
@@ -388,44 +292,8 @@
 }
 
 @mixin mq($screen-width) {
-    @if $screen-width == 'deskTop-superWide' {
-        @media screen and (min-width: 1470px) {
-            @content;
-        }
-    } @else if $screen-width == 'deskTop-wide' {
-        @media screen and (min-width: 1410px) {
-            @content;
-        }
-    } @else if $screen-width == 'deskTop-anoter' {
-        @media screen and (min-width: 1300px) {
-            @content;
-        }
-    } @else if $screen-width == 'deskTop' {
-        @media screen and (min-width: 1024px) {
-            @content;
-        }
-    } @else if $screen-width == 'tablet' {
-        @media screen and (min-width: 768px) {
-            @content;
-        }
-    } @else if $screen-width == 'tabletLte' {
-        @media screen and (max-width: 1023px) {
-            @content;
-        }
-    } @else if $screen-width == 'mobile-anoter' {
+    @if $screen-width == 'mobile-anoter' {
         @media screen and (min-width: 380px) {
-            @content;
-        }
-    } @else if $screen-width == 'onlyMobile-small' {
-        @media screen and (max-width: 380px) {
-            @content;
-        }
-    } @else if $screen-width == 'onlyMobile' {
-        @media screen and (max-width: 767px) {
-            @content;
-        }
-    } @else if $screen-width == 'onlyTablet' {
-        @media screen and (min-width: 768px) and (max-width: 1023px) {
             @content;
         }
     }

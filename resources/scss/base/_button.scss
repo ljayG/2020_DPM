@@ -6,7 +6,6 @@
     }
 
     &.topbord{
-        @include marTop(50);
         border-top: 2px solid $lgray;
         padding-top: 20px;
     }

@@ -1,0 +1,153 @@
+.instructor{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    .picture{
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        overflow: hidden;
+    }
+
+    .career{
+        width: calc(100% - 101px);
+
+        .name{
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 5px;
+
+            span{
+                margin-left: 2px;
+                font-size: 0.813rem;
+                font-weight: 400;
+            }
+        }
+
+        ul{
+            li{
+                position: relative;
+                padding-left: 5px;
+                margin-bottom: 2px;
+                font-size: 0.813rem;
+
+                &::before{
+                    background-color: $color-primary;
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    top: 4px;
+                    left: 0;
+                    width: 1px;
+                    height: 11px;
+                }
+
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.praylist{
+    & > li{
+        background-color: $white;
+        border: 1px solid $lgray;
+        box-shadow: rgba($black, 0.15) 0 3px 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 6px;
+
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+
+        .num{
+            color: $white;
+            background-color: $color-primary;
+            width: 24px;
+            height: 24px;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 50%;
+        }
+
+        .pray{
+            color: $black;
+            width: calc(100% - 34px);
+            font-size: 0.875rem;
+        }
+    }
+
+    &.modeblue{
+        & > li{
+            .num{
+                background-color: $blue;
+            }
+        }
+    }
+}
+
+.constbuild{
+    margin-bottom: 30px;
+
+    .picture{
+        @include marginCenter();
+        width: 85px;
+        height: 85px;
+        margin-bottom: 5px;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        overflow: hidden;
+    }
+
+    @at-root .sector1 &:last-of-type{
+        margin-bottom: 0;
+    }
+}
+
+.dayslide{
+    .item{
+
+        & > a{
+            display: block;
+        }
+
+        .face{
+            @include marginCenter();
+            position: relative;
+            width: 85px;
+            height: 85px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            overflow: hidden;
+            border-radius: 50%;
+            box-shadow: rgba($black, 0.15) 0 3px 8px;
+
+            .day{
+                color: $white;
+                display: block;
+                position: absolute;
+                width: 100%;
+                top: 6px;
+                left: 0;
+                font-size: 0.875rem;
+                font-weight: 700;
+                text-align: center;
+                text-shadow: rgba($black, 0.15) 0 0 3px;
+            }
+        }
+    }
+}

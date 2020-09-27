@@ -1,0 +1,25 @@
+.footer{
+    background-color: $black2;
+    padding: 20px 10px 40px;
+
+    .footlogo{
+        margin-bottom: 8px;
+
+        & > a{
+            @include marginCenter();
+            @include ir();
+            display: block;
+            width: 126px;
+            height: 39px;
+            background: url('../images/common/flogo.png') no-repeat;
+            background-size: contain;
+        }
+    }
+
+    .footcopy{
+        color: $gray2;
+        font-size: 0.75rem;
+        text-align: center;
+        line-height: 1.8;
+    }
+}
