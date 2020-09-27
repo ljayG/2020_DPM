@@ -34,19 +34,6 @@
   }
 }
 
-@keyframes pointspot{
-  from{
-    opacity: 0.7;
-    transform: scale(1);
-    background-color: $red;
-  }
-  to{
-    opacity: 0;
-    transform: scale(10);
-    background-color: $white;
-  }
-}
-
 @keyframes rotateVane{
   100%{
     transform: rotate(360deg);
