@@ -1,0 +1,31 @@
+.mainsector_visual{
+    padding: 56px 0 30px;
+    background: url('../images/main/bg_visual.jpg') no-repeat center top;
+    background-size: cover;
+    text-align: center;
+
+    h3{
+        margin-bottom: 8px;
+
+        img{
+            width: 250px;
+        }
+    }
+
+    .mainv_copy{
+        color: $white;
+        margin-bottom: 50px;
+        font-size: 0.875rem;
+        line-height: 1.8;
+
+        .copy_second{
+            line-height: 1.3;
+        }
+
+        strong{
+            color: $yellow;
+            font-size: 1.25rem;
+            font-weight: 900;
+        }
+    }
+}
