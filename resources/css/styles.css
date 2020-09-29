@@ -173,7 +173,7 @@ img.maxw100 { max-width: 100%; }
 
 .isico { text-indent: -9999em; overflow: hidden; display: block; }
 
-.isico.isi_comn01 { width: 36px; height: 28px; background-image: url("../images/icon/comn01.png"); background-repeat: no-repeat; background-size: contain; }
+.isico.isi_comn01 { width: 26px; height: 39px; background-image: url("../images/icon/comn01.png"); background-repeat: no-repeat; background-size: contain; }
 
 .isico.isi_comn02 { width: 32px; height: 36px; background-image: url("../images/icon/comn02.png"); background-repeat: no-repeat; background-size: contain; }
 
@@ -183,17 +183,47 @@ img.maxw100 { max-width: 100%; }
 
 .isico.isi_top { width: 27px; height: 27px; background-image: url("../images/icon/top.png"); background-repeat: no-repeat; background-size: contain; }
 
-.isico.isi_dw1 { width: 17.5px; height: 20px; background-image: url("/resources/images/icon/dw1.png"); background-repeat: no-repeat; background-size: contain; }
+.isico.isi_area1 { width: 50px; height: 50px; background-image: url("../images/icon/area1.png"); background-repeat: no-repeat; background-size: contain; }
 
-.isico.isi_dw2 { width: 17.5px; height: 20px; background-image: url("/resources/images/icon/dw2.png"); background-repeat: no-repeat; background-size: contain; }
+.isico.isi_area2 { width: 50px; height: 50px; background-image: url("../images/icon/area2.png"); background-repeat: no-repeat; background-size: contain; }
 
-.isico.isi_dw3 { width: 17.5px; height: 20px; background-image: url("/resources/images/icon/dw3.png"); background-repeat: no-repeat; background-size: contain; }
+.isico.isi_area3 { width: 50px; height: 50px; background-image: url("../images/icon/area3.png"); background-repeat: no-repeat; background-size: contain; }
 
-.isico.isi_dw4 { width: 17.5px; height: 20px; background-image: url("/resources/images/icon/dw4.png"); background-repeat: no-repeat; background-size: contain; }
+.isico.isi_area4 { width: 50px; height: 50px; background-image: url("../images/icon/area4.png"); background-repeat: no-repeat; background-size: contain; }
 
-.isico.isi_dw5 { width: 17.5px; height: 20px; background-image: url("/resources/images/icon/dw5.png"); background-repeat: no-repeat; background-size: contain; }
+.isico.isi_area5 { width: 50px; height: 50px; background-image: url("../images/icon/area5.png"); background-repeat: no-repeat; background-size: contain; }
 
-.isico.isi_dw6 { width: 17.5px; height: 20px; background-image: url("/resources/images/icon/dw6.png"); background-repeat: no-repeat; background-size: contain; }
+.isico.isi_area6 { width: 50px; height: 50px; background-image: url("../images/icon/area6.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_area7 { width: 50px; height: 50px; background-image: url("../images/icon/area7.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_area8 { width: 50px; height: 50px; background-image: url("../images/icon/area8.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_area9 { width: 50px; height: 50px; background-image: url("../images/icon/area9.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_area10 { width: 50px; height: 50px; background-image: url("../images/icon/area10.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_area11 { width: 50px; height: 50px; background-image: url("../images/icon/area11.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_area12 { width: 50px; height: 50px; background-image: url("../images/icon/area12.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_area13 { width: 50px; height: 50px; background-image: url("../images/icon/area13.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_area14 { width: 50px; height: 50px; background-image: url("../images/icon/area14.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_area15 { width: 50px; height: 50px; background-image: url("../images/icon/area15.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_area16 { width: 50px; height: 50px; background-image: url("../images/icon/area16.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_area17 { width: 50px; height: 50px; background-image: url("../images/icon/area17.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_area18 { width: 50px; height: 50px; background-image: url("../images/icon/area18.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_area19 { width: 50px; height: 50px; background-image: url("../images/icon/area19.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_area20 { width: 50px; height: 50px; background-image: url("../images/icon/area20.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_area21 { width: 50px; height: 50px; background-image: url("../images/icon/area21.png"); background-repeat: no-repeat; background-size: contain; }
 
 .header { background-color: #fff; position: fixed; width: 100%; height: 43px; top: 0; left: 0; z-index: 10; }
 
@@ -221,7 +251,7 @@ img.maxw100 { max-width: 100%; }
 
 .footer .footlogo { margin-bottom: 8px; }
 
-.footer .footlogo > a { margin-left: auto; margin-right: auto; text-indent: -9999em; overflow: hidden; display: block; width: 126px; height: 39px; background: url("../images/common/flogo.png") no-repeat; background-size: contain; }
+.footer .footlogo > a { margin-left: auto; margin-right: auto; text-indent: -9999em; overflow: hidden; display: block; width: 154px; height: 32px; background: url("../images/common/flogo.png") no-repeat; background-size: contain; }
 
 .footer .footcopy { color: #6c707c; font-size: 0.75rem; text-align: center; line-height: 1.8; }
 

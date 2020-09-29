@@ -3,7 +3,7 @@
     display: block;
 
     &.isi_comn01{
-        @include bgicon(36, 28, '../images/icon/comn01.png');
+        @include bgicon(26, 39, '../images/icon/comn01.png');
     }
     &.isi_comn02{
         @include bgicon(32, 36, '../images/icon/comn02.png');
@@ -18,9 +18,9 @@
         @include bgicon(27, 27, '../images/icon/top.png');
     }
 
-    @for $down from 1 through 6{
-        &.isi_dw#{$down}{
-            @include bgicon(17.5, 20, '/resources/images/icon/dw#{$down}.png');
+    @for $areaNum from 1 through 21{
+        &.isi_area#{$areaNum}{
+            @include bgicon(50, 50, '../images/icon/area#{$areaNum}.png');
         }
     }
 
