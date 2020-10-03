@@ -173,7 +173,7 @@ img.maxw100 { max-width: 100%; }
 
 .isico { text-indent: -9999em; overflow: hidden; display: block; }
 
-.isico.isi_comn01 { width: 26px; height: 39px; background-image: url("../images/icon/comn01.png"); background-repeat: no-repeat; background-size: contain; }
+.isico.isi_comn01 { width: 36px; height: 28px; background-image: url("../images/icon/comn01.png"); background-repeat: no-repeat; background-size: contain; }
 
 .isico.isi_comn02 { width: 32px; height: 36px; background-image: url("../images/icon/comn02.png"); background-repeat: no-repeat; background-size: contain; }
 
@@ -224,6 +224,48 @@ img.maxw100 { max-width: 100%; }
 .isico.isi_area20 { width: 50px; height: 50px; background-image: url("../images/icon/area20.png"); background-repeat: no-repeat; background-size: contain; }
 
 .isico.isi_area21 { width: 50px; height: 50px; background-image: url("../images/icon/area21.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_pray1 { width: 50px; height: 50px; background-image: url("../images/icon/pray1.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_pray2 { width: 50px; height: 50px; background-image: url("../images/icon/pray2.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_pray3 { width: 50px; height: 50px; background-image: url("../images/icon/pray3.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_pray4 { width: 50px; height: 50px; background-image: url("../images/icon/pray4.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_pray5 { width: 50px; height: 50px; background-image: url("../images/icon/pray5.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_pray6 { width: 50px; height: 50px; background-image: url("../images/icon/pray6.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_pray7 { width: 50px; height: 50px; background-image: url("../images/icon/pray7.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_pray8 { width: 50px; height: 50px; background-image: url("../images/icon/pray8.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_pray9 { width: 50px; height: 50px; background-image: url("../images/icon/pray9.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_pray10 { width: 50px; height: 50px; background-image: url("../images/icon/pray10.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_pray11 { width: 50px; height: 50px; background-image: url("../images/icon/pray11.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_pray12 { width: 50px; height: 50px; background-image: url("../images/icon/pray12.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_pray13 { width: 50px; height: 50px; background-image: url("../images/icon/pray13.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_pray14 { width: 50px; height: 50px; background-image: url("../images/icon/pray14.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_pray15 { width: 50px; height: 50px; background-image: url("../images/icon/pray15.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_pray16 { width: 50px; height: 50px; background-image: url("../images/icon/pray16.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_pray17 { width: 50px; height: 50px; background-image: url("../images/icon/pray17.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_pray18 { width: 50px; height: 50px; background-image: url("../images/icon/pray18.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_pray19 { width: 50px; height: 50px; background-image: url("../images/icon/pray19.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_pray20 { width: 50px; height: 50px; background-image: url("../images/icon/pray20.png"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_pray21 { width: 50px; height: 50px; background-image: url("../images/icon/pray21.png"); background-repeat: no-repeat; background-size: contain; }
 
 .header { background-color: #fff; position: fixed; width: 100%; height: 43px; top: 0; left: 0; z-index: 10; }
 

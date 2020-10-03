@@ -3,7 +3,7 @@
     display: block;
 
     &.isi_comn01{
-        @include bgicon(26, 39, '../images/icon/comn01.png');
+        @include bgicon(36, 28, '../images/icon/comn01.png');
     }
     &.isi_comn02{
         @include bgicon(32, 36, '../images/icon/comn02.png');
@@ -21,6 +21,11 @@
     @for $areaNum from 1 through 21{
         &.isi_area#{$areaNum}{
             @include bgicon(50, 50, '../images/icon/area#{$areaNum}.png');
+        }
+    }
+    @for $prayNum from 1 through 21{
+        &.isi_pray#{$prayNum}{
+            @include bgicon(50, 50, '../images/icon/pray#{$prayNum}.png');
         }
     }
 
