@@ -61,6 +61,11 @@
     }
 }
 
+.sector3{
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+
 .subtit{
     padding-bottom: 27px;
     text-align: center;
@@ -143,6 +148,12 @@
             @include posiCenter('va');
         }
     }
+}
+
+.sectit4{
+    color: $color-primary;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
 }
 
 .video-js{
