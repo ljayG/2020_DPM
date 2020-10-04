@@ -73,8 +73,8 @@
 						</video>
 					</div>
 				</section>
-				<section class="sector1 mainset" id="DMPrayerList">
-					<div class="inner">
+				<section class="sector1 mainset animation-waypoint" id="DMPrayerList">
+					<div class="inner aninner">
 						<h3 class="sectit2">
 							2020 다니엘기도회 일정
 							<p class="smalltit">(2020.11.1~21)</p>
@@ -251,8 +251,8 @@
 						</ul>
 					</div>
 				</section>
-				<section class="sector1 mainset bggray2 mainpraybg">
-					<div class="inner">
+				<section class="sector1 mainset bggray2 mainpraybg animation-waypoint" id="aniPoint1">
+					<div class="inner aninner">
 						<h3 class="sectit2">다니엘기도회 준비기도문</h3>
 						<ul class="praylist">
 							<li>
@@ -278,7 +278,7 @@
 		</main>
 		<!--// contents Area(e) -->
 		<!-- footer Area(s) -->
-		<footer class="footer">
+		<footer class="footer" id="aniFooter">
 			<div id="footer">
 				<h5 class="footlogo"><a href="/">다니엘기도회</a></h5>
 				<p class="footcopy">
@@ -300,5 +300,18 @@
 	</div>
 	<script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
 	<script src="../../resources/js/common.js"></script>
+	<script>
+        $(document).ready(function(){
+            $('#DMPrayerList').waypoint(function() {
+                $('#DMPrayerList').addClass('anistart');
+            }, { offset: '60%' });
+			$('#aniPoint1').waypoint(function() {
+                $('#aniPoint1').addClass('anistart');
+            }, { offset: '60%' });
+            $('#aniFooter').waypoint(function() {
+                $('#aniFooter').addClass('anistart');
+            }, { offset: '80%' });
+        });
+    </script>
 </body>
 </html>

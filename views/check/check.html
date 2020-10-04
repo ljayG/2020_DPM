@@ -21,6 +21,10 @@
 	<link rel="stylesheet" type="text/css" href="../../resources/plugins/slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="../../resources/plugins/slick/slick-theme.css">
 	<script type="text/javascript" src="../../resources/plugins/slick/slick.min.js"></script>
+	<link rel="stylesheet" href="https://vjs.zencdn.net/7.8.4/video-js.css">
+	<link rel="stylesheet" href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css"><!-- City -->
+	<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+	<script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 </head>
 <body>
 	<!-- 스킵 네비게이션(s) -->
@@ -47,7 +51,7 @@
 		<!--// header Area(e) -->
 		<!-- contents Area(s) -->
 		<main class="container">
-			<div id="contents">
+			<div id="contents" class="checkwrap">
                 <section class="checksect">
                     <div class="inner">
                         <h3 class="sectit4">나의 출석부</h3>
@@ -266,8 +270,8 @@
                         </ul>
                     </div>
                 </section>
-                <section class="sector3">
-                    <div class="inner">
+                <section class="sector3 animation-waypoint" id="aniPoint1">
+                    <div class="inner aninner">
                         <form class="chkfrm">
                             <fieldset>
                                 <legend>출석체크 기본정보 입력폼</legend>
@@ -330,7 +334,7 @@
 		</main>
 		<!--// contents Area(e) -->
 		<!-- footer Area(s) -->
-		<footer class="footer">
+		<footer class="footer" id="aniFooter">
 			<div id="footer">
 				<h5 class="footlogo"><a href="/">다니엘기도회</a></h5>
 				<p class="footcopy">
@@ -350,10 +354,17 @@
 			<a href="#footer" class="btn_btm anchor"><span class="isico isi_top">아래로</span></a>
 		</div>
 	</div>
-	<script>
-		const initSlider = 0; // 현 강사 위치 슬라이드 처음으로 위치 0~부터 시작(예를 들어 7일 강사면 6으로 입력)
-	</script>
 	<script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
 	<script src="../../resources/js/common.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#aniPoint1').waypoint(function() {
+                $('#aniPoint1').addClass('anistart');
+            }, { offset: '60%' });
+            $('#aniFooter').waypoint(function() {
+                $('#aniFooter').addClass('anistart');
+            }, { offset: '80%' });
+        });
+    </script>
 </body>
 </html>

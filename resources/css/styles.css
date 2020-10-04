@@ -1,10 +1,10 @@
-@font-face { font-family: 'Nanum Square'; src: url("/resources/fonts/NanumSquareL.eot"); src: url("/resources/fonts/NanumSquareL.eot?#iefix") format("embedded-opentype"), url("/resources/fonts/NanumSquareL.woff2") format("woff2"), url("/resources/fonts/NanumSquareL.woff") format("woff"), url("/resources/fonts/NanumSquareL.ttf") format("truetype"); font-weight: 300; font-style: normal; }
+@font-face { font-family: 'Nanum Square'; src: url("../fonts/NanumSquareL.eot"); src: url("../fonts/NanumSquareL.eot?#iefix") format("embedded-opentype"), url("../fonts/NanumSquareL.woff") format("woff"), url("../fonts/NanumSquareL.ttf") format("truetype"); font-weight: 300; font-style: normal; }
 
-@font-face { font-family: 'Nanum Square'; src: url("/resources/fonts/NanumSquareR.eot"); src: url("/resources/fonts/NanumSquareR.eot?#iefix") format("embedded-opentype"), url("/resources/fonts/NanumSquareR.woff2") format("woff2"), url("/resources/fonts/NanumSquareR.woff") format("woff"), url("/resources/fonts/NanumSquareR.ttf") format("truetype"); font-weight: 400; font-style: normal; }
+@font-face { font-family: 'Nanum Square'; src: url("../fonts/NanumSquareR.eot"); src: url("../fonts/NanumSquareR.eot?#iefix") format("embedded-opentype"), url("../fonts/NanumSquareR.woff") format("woff"), url("../fonts/NanumSquareR.ttf") format("truetype"); font-weight: 400; font-style: normal; }
 
-@font-face { font-family: 'Nanum Square'; src: url("/resources/fonts/NanumSquareB.eot"); src: url("/resources/fonts/NanumSquareB.eot?#iefix") format("embedded-opentype"), url("/resources/fonts/NanumSquareB.woff2") format("woff2"), url("/resources/fonts/NanumSquareB.woff") format("woff"), url("/resources/fonts/NanumSquareB.ttf") format("truetype"); font-weight: 700; font-style: normal; }
+@font-face { font-family: 'Nanum Square'; src: url("../fonts/NanumSquareB.eot"); src: url("../fonts/NanumSquareB.eot?#iefix") format("embedded-opentype"), url("../fonts/NanumSquareB.woff") format("woff"), url("../fonts/NanumSquareB.ttf") format("truetype"); font-weight: 700; font-style: normal; }
 
-@font-face { font-family: 'Nanum Square'; src: url("/resources/fonts/NanumSquareEB.eot"); src: url("/resources/fonts/NanumSquareEB.eot?#iefix") format("embedded-opentype"), url("/resources/fonts/NanumSquareEB.woff2") format("woff2"), url("/resources/fonts/NanumSquareEB.woff") format("woff"), url("/resources/fonts/NanumSquareEB.ttf") format("truetype"); font-weight: 900; font-style: normal; }
+@font-face { font-family: 'Nanum Square'; src: url("../fonts/NanumSquareEB.eot"); src: url("../fonts/NanumSquareEB.eot?#iefix") format("embedded-opentype"), url("../fonts/NanumSquareEB.woff") format("woff"), url("../fonts/NanumSquareEB.ttf") format("truetype"); font-weight: 900; font-style: normal; }
 
 .ftc_default { color: #3a3a3a; }
 
@@ -399,6 +399,14 @@ img.maxw100 { max-width: 100%; }
 
 .pagecontrols > a.btn_btm .isico { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 
+#footer { -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; -webkit-transition-delay: 0.3s; transition-delay: 0.3s; opacity: 0; }
+
+#aniFooter { -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; opacity: 0; }
+
+#aniFooter.anistart { opacity: 1; }
+
+#aniFooter.anistart #footer { opacity: 1; }
+
 #contents { position: relative; padding-top: 44px; }
 
 .inner { margin-left: 15px; margin-right: 15px; }
@@ -456,6 +464,14 @@ img.maxw100 { max-width: 100%; }
 .embed_container { position: relative; max-width: 100%; height: 0; padding-bottom: 56.25%; margin-bottom: 12px; overflow: hidden; z-index: 1; }
 
 .embed_container iframe, .embed_container object, .embed_container embed { position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1; }
+
+.aninner { -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; -webkit-transform: translateY(50px); transform: translateY(50px); -webkit-transition-delay: 0.3s; transition-delay: 0.3s; opacity: 0; }
+
+.animation-waypoint { -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; opacity: 0; -webkit-transform: translateY(50px); transform: translateY(50px); }
+
+.animation-waypoint.anistart { opacity: 1; -webkit-transform: translateY(0); transform: translateY(0); }
+
+.animation-waypoint.anistart .aninner { opacity: 1; -webkit-transform: translateY(0); transform: translateY(0); }
 
 .mainsector_visual { padding: 56px 0 30px; background: url("../images/main/bg_visual.jpg") no-repeat center top; background-size: cover; text-align: center; }
 
@@ -569,7 +585,11 @@ img.maxw100 { max-width: 100%; }
 
 .face_pic.inspicture21 { background-image: url("../images/days/instructor21.jpg"); }
 
-.checksect { background-color: #f5f5f5; padding: 25px 0 20px; }
+.checkwrap { background-color: #f5f5f5; }
+
+.checkwrap .sector3 { background-color: #fff; }
+
+.checksect { padding: 25px 0 20px; }
 
 .checklist { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 

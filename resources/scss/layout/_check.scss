@@ -1,5 +1,12 @@
-.checksect{
+.checkwrap{
     background-color: $bggray1;
+
+    .sector3{
+        background-color: $white;
+    }
+}
+
+.checksect{
     padding: 25px 0 20px;
 }
 

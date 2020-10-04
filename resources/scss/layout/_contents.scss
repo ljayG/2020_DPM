@@ -184,3 +184,26 @@
         z-index: 1
     }
 }
+
+.aninner{
+    @include transition(0.4s);
+    transform: translateY(50px);
+    transition-delay: 0.3s;
+    opacity: 0;
+}
+
+.animation-waypoint{
+    @include transition(0.4s);
+    opacity: 0;
+    transform: translateY(50px);
+
+    &.anistart{
+        opacity: 1;
+        transform: translateY(0);
+
+        .aninner{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}

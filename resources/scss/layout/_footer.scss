@@ -57,3 +57,22 @@
         }
     }
 }
+
+#footer{
+    @include transition(0.4s);
+    transition-delay: 0.3s;
+    opacity: 0;
+}
+
+#aniFooter{
+    @include transition(0.4s);
+    opacity: 0;
+
+    &.anistart{
+        opacity: 1;
+
+        #footer{
+            opacity: 1;
+        }
+    }
+}
