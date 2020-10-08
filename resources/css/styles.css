@@ -267,6 +267,12 @@ img.maxw100 { max-width: 100%; }
 
 .isico.isi_pray21 { width: 50px; height: 50px; background-image: url("../images/icon/pray21.png"); background-repeat: no-repeat; background-size: contain; }
 
+.isico.isi_sns1 { width: 40px; height: 40px; background-image: url("../images/icon/sns1.gif"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_sns2 { width: 40px; height: 40px; background-image: url("../images/icon/sns2.gif"); background-repeat: no-repeat; background-size: contain; }
+
+.isico.isi_sns3 { width: 40px; height: 40px; background-image: url("../images/icon/sns3.gif"); background-repeat: no-repeat; background-size: contain; }
+
 .btnwrap::after { content: ''; display: block; float: none; clear: both; height: 0; font-size: 0; line-height: 0; visibility: hidden; }
 
 .btnwrap .center { text-align: center; }
@@ -624,3 +630,23 @@ img.maxw100 { max-width: 100%; }
 .infrmdl > dt { margin-bottom: 5px; font-size: 0.938rem; }
 
 .chkfrm .btnwrap { margin-top: 25px; }
+
+.popwrap { display: none; position: relative; }
+
+.popwrap .popclose { position: absolute; display: block; width: 32px; height: 32px; top: 11px; right: 11px; }
+
+.popwrap .popclose span { margin-left: auto; margin-right: auto; text-indent: -9999em; overflow: hidden; width: 14px; height: 14px; background-image: url("../images/icon/close.png"); background-repeat: no-repeat; background-size: contain; display: block; }
+
+.poptype1 { background-color: #fff; border: 1px solid #282828; -webkit-box-shadow: rgba(40, 40, 40, 0.5) 0 0 4px; box-shadow: rgba(40, 40, 40, 0.5) 0 0 4px; width: 89.33333%; max-width: 392px; padding: 40px 30px; }
+
+.poptype1 .popclose { top: 3px; right: 3px; }
+
+.popcontents { position: relative; }
+
+.popcontents .snshare::after { content: ''; display: block; float: none; clear: both; height: 0; font-size: 0; line-height: 0; visibility: hidden; }
+
+.popcontents .snshare > li { width: 33.33333%; float: left; }
+
+.popcontents .snshare > li button { margin-left: auto; margin-right: auto; display: block; }
+
+.popcontents .snshare > li button p { margin-top: 8px; font-size: 0.813rem; color: #282828; text-align: center; }

@@ -115,3 +115,63 @@
         margin-top: 25px;
     }
 }
+
+.popwrap{
+    display: none;
+    position: relative;
+
+    .popclose{
+        position: absolute;
+        display: block;
+        width: 32px;
+        height: 32px;
+        top: 11px;
+        right: 11px;
+
+        span{
+            @include marginCenter();
+            @include ir();
+            @include bgicon(14, 14, '../images/icon/close.png');
+            display: block;
+        }
+    }
+}
+
+.poptype1{
+    background-color: $white;
+    border: 1px solid $black;
+    box-shadow: rgba($black, 0.5) 0 0 4px;
+    width: (670/750)*100%;
+    max-width: 392px;
+    padding: 40px 30px;
+
+    .popclose{
+        top: 3px;
+        right: 3px;
+    }
+}
+
+.popcontents{
+    position: relative;
+
+    .snshare{
+        @include clearfix();
+
+        & > li{
+            @include col(3);
+            float: left;
+
+            button{
+                @include marginCenter();
+                display: block;
+
+                p{
+                    margin-top: 8px;
+                    font-size: 0.813rem;
+                    color: $black;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

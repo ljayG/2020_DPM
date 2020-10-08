@@ -28,5 +28,10 @@
             @include bgicon(50, 50, '../images/icon/pray#{$prayNum}.png');
         }
     }
+    @for $snsic from 1 through 3{
+        &.isi_sns#{$snsic}{
+            @include bgicon(40, 40, '../images/icon/sns#{$snsic}.gif');
+        }
+    }
 
 }

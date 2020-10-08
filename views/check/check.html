@@ -21,10 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="../../resources/plugins/slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="../../resources/plugins/slick/slick-theme.css">
 	<script type="text/javascript" src="../../resources/plugins/slick/slick.min.js"></script>
-	<link rel="stylesheet" href="https://vjs.zencdn.net/7.8.4/video-js.css">
-	<link rel="stylesheet" href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css"><!-- City -->
-	<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
-	<script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <script type="text/javascript" src="../../resources/js/lib/popupoverlay.js"></script>
 </head>
 <body>
 	<!-- 스킵 네비게이션(s) -->
@@ -324,7 +321,7 @@
                                     </dd>
                                 </dl>
                                 <div class="btnwrap">
-                                    <button type="submit" class="btn1"><span>개근 출석부 보내기</span></button>
+                                    <button type="button" class="btn1 popShare_open"><span>개근 출석부 보내기</span></button>
                                 </div>
                             </fieldset>
                         </form>
@@ -354,7 +351,34 @@
 			<a href="#footer" class="btn_btm anchor"><span class="isico isi_top">아래로</span></a>
 		</div>
 	</div>
-	<script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+    <!-- popup 공유(s) -->
+    <section class="popwrap poptype1" id="popShare">
+        <h5 class="blind">공유하기</h5>
+        <div class="popcontents">
+            <ul class="snshare">
+                <li>
+                    <button type="button">
+                        <span class="isico isi_sns1"></span>
+                        <p>페이스북</p>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <span class="isico isi_sns2"></span>
+                        <p>트위터</p>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <span class="isico isi_sns3"></span>
+                        <p>카카오</p>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <button type="button" class="popclose popShare_close"><span>팝업 닫기</span></button>
+    </section>
+    <!--// popup 공유(e) -->
 	<script src="../../resources/js/common.js"></script>
     <script>
         $(document).ready(function(){
@@ -364,6 +388,8 @@
             $('#aniFooter').waypoint(function() {
                 $('#aniFooter').addClass('anistart');
             }, { offset: '80%' });
+
+            $("#popShare").popup();
         });
     </script>
 </body>

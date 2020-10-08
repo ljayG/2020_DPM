@@ -28,13 +28,11 @@ $(document).ready(function() {
         }, 500);
     });
 
-	$('#daysSlider').slick({
-		arrows: false,
-		slidesToShow: 3,
-		initialSlide: initSlider, // 현 강사 위치 슬라이드 처음으로 위치 0~부터 시작
-	});
-});
+	// $('#daysSlider').slick({
+	// 	arrows: false,
+	// 	slidesToShow: 3,
+	// 	initialSlide: initSlider, // 현 강사 위치 슬라이드 처음으로 위치 0~부터 시작
+	// });
 
-var player = videojs('daysVideo', {
-    autoplay: 'false',
+	$("#popShare").popup();
 });
